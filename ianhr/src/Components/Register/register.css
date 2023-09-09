@@ -1,0 +1,99 @@
+/* Colors  */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.formContainer .homeCard {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 11rem 0;
+  background: var(--whiteColor);
+  gap: 1rem;
+  justify-content: center;
+  left: 50%;
+}
+.formContainer .homeCard .title {
+  text-align: center;
+  color: var(--PrimaryColor);
+}
+.formContainer .homeCard .inputsDiv {
+  display: flex;
+}
+.formContainer .homeCard .inputsDiv .locationDiv,
+.formContainer .homeCard .inputsDiv .distDiv,
+.formContainer .homeCard .inputsDiv .priceDiv {
+  width: 100%;
+  margin: 10px;
+}
+.formContainer .homeCard .inputsDiv .locationDiv label,
+.formContainer .homeCard .inputsDiv .distDiv label,
+.formContainer .homeCard .inputsDiv .priceDiv label {
+  display: block;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 0.4rem;
+}
+.formContainer .homeCard .inputsDiv .locationDiv input,
+.formContainer .homeCard .inputsDiv .distDiv input,
+.formContainer .homeCard .inputsDiv .priceDiv input {
+  width: 100%;
+  background: var(--inputColor);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.formContainer .homeCard .inputsDiv .locationDiv input::-moz-placeholder, .formContainer .homeCard .inputsDiv .distDiv input::-moz-placeholder, .formContainer .homeCard .inputsDiv .priceDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.formContainer .homeCard .inputsDiv .locationDiv input::placeholder,
+.formContainer .homeCard .inputsDiv .distDiv input::placeholder,
+.formContainer .homeCard .inputsDiv .priceDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.formContainer .homeCard .inputsDiv .locationDiv input:focus,
+.formContainer .homeCard .inputsDiv .distDiv input:focus,
+.formContainer .homeCard .inputsDiv .priceDiv input:focus {
+  outline: none;
+}
+.formContainer .homeCard .btn {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  background: var(--PrimaryColor);
+}
+
+@media screen and (min-width: 320px) {
+  .formContainer .homeCard .inputsDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .formContainer .homeCard .inputsDiv {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=register.css.map */

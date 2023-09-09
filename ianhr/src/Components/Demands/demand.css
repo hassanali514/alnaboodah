@@ -1,0 +1,84 @@
+/* Colors  */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  /* box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45); */
+}
+
+.demand {
+  padding: 8rem 0;
+}
+.demand .videoCard {
+  margin-top: 9rem;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgba(253, 139, 45, 0.84357493) 89%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.demand .videoCard .cardContent {
+  padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .demand .videoCard .cardContent {
+    padding: 2rem 1rem;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div {
+    width: 100% !important;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div img {
+    height: 200px !important;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .demand .videoCard .cardContent {
+    padding: 0.5rem 0.1rem;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div {
+    width: 100% !important;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div img {
+    height: 250px !important;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .demand .videoCard {
+    box-shadow: 0 2px 8px 4px rgba(74, 70, 70, 0.376);
+    border-radius: 1rem;
+  }
+  .demand .videoCard .cardContent {
+    padding: 3.5rem 0.5rem;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div {
+    width: 100% !important;
+  }
+  .demand .videoCard .cardContent .slider-wrapper .slider .slide div img {
+    height: 300px !important;
+    width: 60%;
+  }
+}/*# sourceMappingURL=demand.css.map */
